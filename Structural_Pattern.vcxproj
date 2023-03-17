@@ -100,9 +100,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="adapter.cpp" />
+    <ClCompile Include="bridge.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h" />
+    <ClInclude Include="bridge.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
