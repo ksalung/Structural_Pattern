@@ -44,6 +44,11 @@ protected:
 public:
 	void add(component* _component) override
 	{
+		_children.push_back(_component);
+		_component->set_parent(this);
+	}
+	void remove(component* _component) override
+	{
 		_children.remove(_component);
 		_component->set_parent(nullptr);
 	}
@@ -56,7 +61,7 @@ public:
 		string result;
 		for (const component* c : _children)
 		{
-			if (c = _children.back())
+			if (c == _children.back())
 			{
 				result += c->Operation();
 			}
@@ -64,7 +69,7 @@ public:
 				result += c->Operation() + "+";
 			}
 		}
-		return "branch(" + result + "); ";
+		return "branch(" + result + ");";
 	}
 };
 
