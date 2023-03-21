@@ -103,12 +103,14 @@
     <ClCompile Include="bridge.cpp" />
     <ClCompile Include="composite.cpp" />
     <ClCompile Include="decorator.cpp" />
+    <ClCompile Include="facade.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h" />
     <ClInclude Include="bridge.h" />
     <ClInclude Include="composite.h" />
     <ClInclude Include="decorator.h" />
+    <ClInclude Include="facade.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

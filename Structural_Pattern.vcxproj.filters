@@ -27,6 +27,9 @@
     <ClCompile Include="decorator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="facade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="decorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="facade.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
