@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include <initializer_list>
 
 using namespace std;
 struct sharedstate
@@ -10,6 +11,7 @@ struct sharedstate
 	string model;
 	string color;
 	sharedstate(const string& _brand, const string& _model, const string& _color)
+		:brand(_brand), model(_model), color(_color)
 	{
 	}
 	friend ostream& operator <<(ostream& os, const sharedstate& ss)
@@ -23,6 +25,7 @@ struct uniquestate
 	string owner;
 	string plates;
 	uniquestate(const string _owner, const string _plates)
+		:owner(_owner), plates(_plates)
 	{
 	}
 	friend ostream& operator <<(ostream& os, const uniquestate& ss)
@@ -63,7 +66,7 @@ private:
 		return ss.brand + "_" + ss.model + "_" + ss.color;
 	}
 public:
-	flyweight_factory(initializer_list<sharedstate> _state)
+	flyweight_factory(std::initializer_list<sharedstate> _state)
 	{
 		for (const sharedstate& ss : _state)
 		{
