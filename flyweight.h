@@ -5,7 +5,7 @@
 #include <initializer_list>
 
 using namespace std;
-struct sharedstate
+struct sharedstate //ex> ╩Себ╟╙
 {
 	string brand;
 	string model;
