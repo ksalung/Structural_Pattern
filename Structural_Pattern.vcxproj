@@ -105,6 +105,7 @@
     <ClCompile Include="decorator.cpp" />
     <ClCompile Include="facade.cpp" />
     <ClCompile Include="flyweight.cpp" />
+    <ClCompile Include="proxy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h" />
@@ -113,6 +114,7 @@
     <ClInclude Include="decorator.h" />
     <ClInclude Include="facade.h" />
     <ClInclude Include="flyweight.h" />
+    <ClInclude Include="proxy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

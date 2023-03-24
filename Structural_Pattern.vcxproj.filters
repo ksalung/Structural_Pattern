@@ -33,6 +33,9 @@
     <ClCompile Include="flyweight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="proxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="flyweight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
